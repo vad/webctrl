@@ -1,0 +1,6 @@
+services:
+  spotify:
+    pid:
+      shell: "ps a | grep /usr/share/spotify/spotify | grep -v type | grep -v grep | awk '{print $1}'"
+
+    command: spotify
